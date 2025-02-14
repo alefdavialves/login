@@ -1,0 +1,84 @@
+@charset "UTF_8";
+
+/*
+Verde: #49a09d
+Lilás: #5f2c82
+
+*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html{
+    background-color: #5f2c82;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 20px;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 10px
+}
+
+section#login{
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.441);
+}
+
+
+
+section#login > div#imagem{
+    background-image: url(../imagens/pexels-sean-whang-25006-804269.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+    display: block;
+   
+    
+}
+
+section#login > #formulario{
+    padding: 10px;
+    display: block;
+}
+
+section#login > #formulario > h1{
+
+    text-align: center;
+    padding-bottom: 8px
+
+
+}
+
+section#login > #formulario > p{
+   text-align: justify;
+   font-size: 0.8em;
+   margin-bottom: 10px;
+    
+}
+
+form > input#email{
+    background-color: #49a09d ;
+    padding: 10px;
+    border: 0px solid black;
+    border-radius: 10px;
+    margin: 5px;
+
+}
