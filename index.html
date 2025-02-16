@@ -4,67 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/tablet.css" media="screen and (min-width: 750px)">
+    <link rel="stylesheet" href="estilos/mq.css">
+
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body>
     
 <main>
-<section id="login">
-<div id="imagem">
 
-    </div>
+<section id="login">
+
+<div id="imagem"></div>
 
 <div id="formulario">
-    <h1>Login</h1>
 
-<p>Seja bem vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações do seu ambiente</p>
+    <h1>Login</h1>
+    <p>Seja bem vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações do seu ambiente</p>
 
 </div>
 
-<form action="login.php" method="post"></form>
+<form action="login.php" method="post" autocomplete="on">
 
 <div class="campo">
+
     <i class="material-icons">person</i>
     
-    <input id="iemail" name="email" type="email" placeholder="Seu e-mail" autocomplete="email" required maxlength="10">
-    
+    <input id="iemail" name="email" type="email" 
+    placeholder="Seu e-mail" autocomplete="email" required maxlength="10">
+
+    <label for="iemail">Login</label>
 </div>
 
 <div class="campo"> 
+    <i class="material-icons">vpn-key</i>
 
-    <input type="password" id="isenha" value="Sua senha"> <br>
+    <input type="password" id="isenha" placeholder="Sua Senha" autocomplete="current-password" required minlength="5" maxlength="10"> <br>
+
+    <label for="isenha">Senha</label>
 </div>
 
-<input type="submit" value="Enviar" id="ienviar">
-<input type="button" value="Esqueci a senha" id="iesqsenh">
+<input type="submit" value="Entrar" id="ientrar">
 
-
-
-
-
-
+<a class="botao" href="esqueci.html">Esqueci a senha <i class="material-icons" id="ibotao">mail</i></a>
 
 </form>
-
-
-
-</div>
-
 </section>
-
-
-
-
-
 </main>
-
-
-
-
-
-
 </body>
 </html>
